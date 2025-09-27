@@ -1,0 +1,71 @@
+void main() {
+  //   var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  //   nums.add(11);
+  //   print(nums);
+  //   print(nums[5]);
+  //   print(nums.first);
+  //   print(nums.last);
+
+  //   var fixedNums = List<int>.filled(3, 0);
+  //   fixedNums.add(1);
+  //   print(fixedNums);
+
+  //   var vl1 = <int>[1, 2, 3];
+  //   print(vl1);
+  //   var vl2 = <int>[1, 2, 3];
+  //   print(vl2);
+  //   var vl3 = List.empty(growable: true);
+  //   print(vl3);
+  //   var vl4 = List<int>.filled(3, 0, growable: true);
+  //   print(vl4);
+
+  //   var v3 = List.empty(growable: true);
+  //   var v3 = [];
+  //   v3.add(10);
+  //   v3.add('문자 추가');
+  //   v3.add(true);
+  //   print(v3);
+  //   print(v3.runtimeType);
+
+  //   var valueList = List.generate(100, (index) => 'sample$index');
+  //   print(valueList);
+
+  //   var isString = '문자';
+  //   var isString = 312;
+  //   var sampleList = [1, 3, 5, if (isString is! String) isString, 9, 12];
+  //   print(sampleList);
+
+  //   var listOne = [1, 2, 3];
+  //   print(listOne.runtimeType);
+  //   var listTwo = ['one', 'two', 'three'];
+  //   print(listTwo.runtimeType);
+  //   var mergeList = [...listOne, ...listTwo];
+  //   print(mergeList);
+  //   print(mergeList.runtimeType);
+
+  //   var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  //    print(nums);
+  //    var nums2 = List.generate(10, (index) => index + 1);
+  //    print(nums2);
+
+  //   nums.removeWhere((num) => num % 2 == 0);
+  //   print(nums);
+
+  //   nums.clear();
+  //   print(nums);
+
+  //   var numbers = List.generate(20, (index) => index);
+  //   print(numbers);
+  //   var odds = numbers.where((index) => index % 2 == 1).toList();
+  //   print(odds);
+
+  var mixList = [1, '2', 3, '4', '5', 6, 7, 8, '9'];
+  print(mixList.runtimeType);
+  print(mixList);
+
+  var number = mixList
+      .map<int>((value) => int.parse(value.toString()))
+      .toList();
+  print(number);
+  print(number.runtimeType);
+}
