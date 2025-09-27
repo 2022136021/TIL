@@ -1,0 +1,55 @@
+//타입명시
+List<int> nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var nums2 = <int>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+var nums3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; //
+var nums4 = List<int>.generate(10, (index) => index + 1); 
+
+_________________________________________________
+
+//결과,타입이 같음
+print(nums); 
+print(nums2);
+print(nums3);
+print(nums4);
+print(nums.runtimeType);
+print(nums2.runtimeType);
+print(nums3.runtimeType);
+print(nums4.runtimeType);
+  
+nums.removeWhere((num) => num % 2 == 0);
+print(nums); 
+  
+nums.removeWhere((num) => num % 2 == 1);
+print(nums); 
+
+
+_________________________________________________
+
+// list - 중복허용,  set - 중복불가
+var snackNames = {
+  '새우깡','새우깡', '포카칩', '포스틱', '포카칩', '감자깡'};
+  print(snackNames);
+
+
+
+_________________________________________________
+  
+  var userInfo = {
+    'name' : '개발하는 남자',
+    'age' : '23',
+    'phone' : '010-xxxx-xxxx',
+  };
+  /*Map<String,Map<String,String>> sUser = {};
+  
+  sUser['030417']= userInfo;
+  print(sUser['030417']);
+  */
+
+print(userInfo.runtimeType);
+
+print(userInfo['name']);
+print(userInfo['age']);
+print(userInfo['phone']);
+  
+userInfo['phone'] = '010-xxxx-xxxx';
+print(userInfo);
